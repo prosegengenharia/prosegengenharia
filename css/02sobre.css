@@ -1,0 +1,124 @@
+.placa-sobre {
+    color: #050505d0;
+    width: 95vw;
+    font-size: 15px;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 36%,
+      rgba(189, 187, 187, 1) 74%,
+      rgba(153, 153, 153, 1) 88%
+    );
+    background-size: cover;
+    background-color: rgb();
+  }
+  
+  .placa-sobre img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+  }
+  
+  @media (min-width: 600px) {
+    .placa-sobre{
+      font-size: 17px;
+      width: 600px;
+    }
+  }
+  
+  .placa-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px;
+    padding: 0 20px 20px 20px;
+    height: 95%;
+    border-radius: 2%;
+    border-color: #000;
+    border-style: solid;
+    border-width: 3px;
+    text-align: justify;
+    font-weight: 550;
+  }
+  
+  .placa-title {
+    color: rgb(185, 40, 40);
+    font-family: "Bernard MT Condensed", sans-serif;
+    background: #ff1c1c;
+    background: -webkit-linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
+    background: -moz-linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
+    background: linear-gradient(to bottom, #da0505 41%, #7d0c0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .placa-title img {
+    width: 5vh;
+    height: 5vh;
+  }
+  
+  .placa-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 10%;
+  
+  }
+  
+  .placa-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* stats da empresa */
+    
+    .container-stats {
+      margin: 50px 0 0 0;
+      color: #ffffff;
+      border-style: dashed;
+      border-width: 2vh;
+      border-left: none;
+      border-right: none;
+      border-image: repeating-linear-gradient(
+        45deg,
+        #1a1818,
+        #1a1818 5vh,
+        rgb(255, 196, 0) 5vh,
+        rgb(255, 196, 0) 8vh
+        )
+        20;
+        background-color: #1a1818dc;
+      background-size: auto;
+      width: 100%;
+    }
+    
+    .title-stats {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+    
+    .container-sobre-stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
+      margin-bottom: 50px;
+      gap: 100px;
+    }
+    
+    .content-sobre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .stats {
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+    }

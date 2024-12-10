@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Brigada de Incêndio Orgânica</title>
+    <link rel="stylesheet" type="text/css" href="calculadora-brigada.css" />
+  </head>
+  <body>
+    <a href="../../index.html#servicos"><div class="title-sec">
+      <div class="title-icon">
+        <img
+          src="../../images/backgrounds/left-arrow-svgrepo-com.svg"
+          alt="seta para baixo"
+          width="22px"
+          height="22px"
+        /></div>
+        <div>VOLTAR</div>
+        <div class="title-icon">
+        <img
+          src="../../images/backgrounds/running-man-silhouette-svgrepo-com (1).svg"
+          alt="ícone de ferramentas"
+          width="22px"
+          height="22px"
+        />
+      </div>
+    </div></a>
+    
+    <div class="calculadora-brigada-container">
+      
+      <img
+        src="../../images/logoproseg.webp"
+        alt="logo da empresa"
+        width="45vw"
+        height="45vh"
+      /><img
+      src="../../images/backgrounds/brigada_incendio.webp"
+      alt="ícone de brigada de incêndio com mangueiras"
+      width="55vw"
+      height="55vh"
+    />
+      <h2>
+        PROSEG ENGENHARIA
+        <p>Calculadora de Brigada de Incêndio Orgânica</p> 
+      </h2>
+      
+      <form id="brigada-form">
+        <div id="resultado"></div>
+        
+        <label for="populacao">Número da População Fixa:</label>
+        <input type="number" id="populacao" name="populacao" required />
+
+        <label for="nome_completo">Nome da Área/Instituição:</label>
+        <input type="text" id="nome_completo" name="nome_completo" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="uf">Unidade das Normas:</label>
+        <input
+          type="text"
+          id="uf"
+          name="uf"
+          list="ufs"
+          placeholder="Selecionar opção..."
+        />
+        <datalist id="ufs">
+          <!-- <option value="DN">Diretriz Nacional</option> 
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>-->
+          <option
+            value="MG - INSTRUÇÃO TÉCNICA N. 12 3ª edição. Alterada pela portaria n. 73, de 15 dez 2023, publicada no DOEMG n. 247, ano 131, p. 07"
+          >
+            Minas Gerais
+          </option>
+          <!-- <option value="PA">Pará</option> 
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>-->
+        </datalist>
+
+        <div class="ufs-categorias">
+          <div>
+            <label for="grupo_setorial">Grupo Setorial:</label>
+            <select id="grupo_setorial" name="grupo_setorial">
+              <option value="" disabled selected>
+                Selecione uma categoria...
+              </option>
+            </select>
+          </div>
+          <div>
+            <label for="tipo_ocupacao">Tipo de Ocupação:</label>
+            <select id="tipo_ocupacao" name="tipo_ocupacao"></select>
+          </div>
+          <div id="publicoDiv">      
+          </div>
+        </div>
+
+        
+
+        <button onclick="calcularBrigada()">RESULTADO</button>
+      </form>
+    </div>
+
+    <script src="calculadora-brigada.js"></script>
+  </body>
+</html>

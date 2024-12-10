@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Lora:wght@700&family=Montserrat:ital,wght@0,400;0,600;0,800;1,900&family=Roboto+Slab:wght@800&display=swap");
+
+body {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  animation: background-slide 50s infinite linear;
+  background-size: fit-content;
+  background: #252525;
+  color: #252525;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+@keyframes background-slide {
+  0% {
+    background-image: url("../../images/backgrounds/sobreprojeto.webp");
+  }
+
+  11% {
+    background-image: url("../../images/backgrounds/engambiental.webp");
+  }
+
+  25% {
+    background-image: url("../../images/backgrounds/sobreobra.webp");
+  }
+
+  33% {
+    background-image: url("../../images/backgrounds/sobremangueira.webp");
+  }
+
+  44% {
+    background-image: url("../../images/backgrounds/projetoobra.webp");
+  }
+
+  55% {
+    background-image: url("../../images/backgrounds/sobreparede.webp");
+  }
+
+  66% {
+    background-image: url("../../images/backgrounds/engambiental2.webp");
+  }
+
+  77% {
+    background-image: url("../../images/backgrounds/eletricista.webp");
+  }
+
+  100% {
+    background-image: url("../../images/backgrounds/sobreprojeto.webp");
+  }
+}
+
+.title-sec {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffffc0;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    border: 3px solid transparent;
+    border-radius: 0.2rem;
+    background: url("../../images/backgrounds/green_metal.webp") padding-box,
+      linear-gradient(
+          to right,
+          rgba(168, 166, 166, 0.692),
+          #e0dede,
+          rgb(175, 170, 170)
+        )
+        border-box;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: fit-content;
+    padding: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.calculadora-brigada-container {
+  max-width: 500px;
+  width: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 20px 20px rgba(15, 15, 15, 0.2);
+  background-color: rgba(10, 10, 10, 0.877);
+  margin-bottom: 40px;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.calculadora-brigada-container label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: #fffdfd;
+  border-radius: 3px;
+  border-style: none;
+}
+
+output {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  color: #ffffffe7;
+  margin: 15px 0 15px 0;
+  padding: 10px;
+  background-color: rgb(160, 44, 44);
+  border-radius: 3px;
+  border-style: none;
+}
+
+#resultado {
+width: 95%;
+  color: #ffffffdc;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgb(184, 73, 73) 16%,
+    rgb(165, 28, 28) 74%,
+    rgb(150, 14, 14) 88%
+  );
+  background-size: cover;
+  background-color: rgb();
+  padding: 10px;
+  border-style: solid #0e0d0d;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
